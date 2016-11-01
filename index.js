@@ -8,7 +8,7 @@ var mongoose = require('mongoose')
 
 // Here we find an appropriate database to connect to, defaulting to
  // localhost if we don't find one.
- var uristring = "mongodb://heroku_4b90s6m1:roeiso6s6840c1qbt8elvbbgh1@ds011873.mlab.com:11873/heroku_4b90s6m1"
+ var uristring = "mongodb://heroku_hdv9phl4:2i2tk5qtf32jrplg5rnp2ln3dj@ds139817.mlab.com:39817/heroku_hdv9phl4"
 
  // Makes connection asynchronously.  Mongoose will queue up database
  // operations and release them when the connection is complete.
@@ -20,8 +20,8 @@ var mongoose = require('mongoose')
    }
  });
 
-// // Connect to our Mongo database, using Mongoose
-// mongoose.connect('mongodb://localhost:27017/hackerwall-solution')
+// Connect to our Mongo database, using Mongoose
+//mongoose.connect('mongodb://localhost:27017/hackerwall-solution')
 
 // Including our Models
 var Post = require('./models/posts')
@@ -101,3 +101,5 @@ app.listen( process.env.PORT || 3000, function() {
   console.log( 'listening on 3000' )
 
 })
+
+
